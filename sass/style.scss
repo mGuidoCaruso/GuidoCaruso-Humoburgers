@@ -1,0 +1,377 @@
+/* SASS 2 */
+
+$ColorVerde: rgba(62, 173, 71, 0.7);
+$FontPrincipal:'Archivo Black',
+sans-serif;
+$FontSecundaria:'Roboto Slab',
+serif;
+
+/* CONDICIONAL */
+
+$HumoCard: LunAMierc;
+.box-part {
+    @if $HumoCard==LunAMierc {
+        background-color: rgba(62, 173, 71, 0.7);
+        border-radius: 10px;
+        padding: 60px 10px;
+        margin: 30px 0px;
+    }
+    @else if $HumoCard==JuevAViern {
+        background-color: #0E468A;
+        border-radius: 15px;
+        padding: 60px 10px;
+        margin: 30px 0px;
+    }
+    @else if $HumoCard==SabadYDoming {
+        background-color: #E2231E;
+        border-radius: 20px;
+        padding: 60px 10px;
+        margin: 30px 0px;
+    }
+    @else {
+        background-color: $ColorVerde;
+        border-radius: 5px;
+        padding: 60px 10px;
+        margin: 30px 0px;
+    }
+}
+
+body {
+    background-image: url(../images/background-wood.jpg);
+    background-repeat: repeat-x,
+}
+
+
+/* SCSS */
+
+header {
+    background-color: #161516;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 3px solid #3ead47;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+nav ul li {
+    float: left;
+    font-family: $FontPrincipal;
+    font-size: 1rem;
+    padding-top: 18px;
+    a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+     :hover {
+        background: #3ead47;
+    }
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+video {
+    padding-top: 85px;
+    width: 100%;
+    height: auto;
+}
+
+h6 {
+    color: white;
+}
+
+h3 {
+    font-family: $FontSecundaria;
+    text-align: center;
+}
+
+h2 {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: $FontPrincipal;
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    font-family: $FontPrincipal;
+}
+
+.h4,
+h4 {
+    color: white;
+    font-size: 2rem;
+}
+
+span {
+    color: white;
+    font-family: $FontSecundaria;
+    font-size: 15px;
+}
+
+p {
+    color: white;
+    font-family: $FontSecundaria;
+}
+
+#Contacto {
+    background-color: $ColorVerde;
+    h1 {
+        font-family: $FontPrincipal;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+    h2 {
+        font-family: $FontSecundaria;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.box {
+    padding: 0px 0px;
+    -part {
+        background: #FFF;
+        border-radius: 0;
+        padding: 60px 10px;
+        margin: 30px 0px;
+    }
+}
+
+.text {
+    margin: 20px 0px;
+}
+
+#LoLlevamosAOtroNivel {
+    background-image: url(../images/imagenlollevamosaotronivel.jpg);
+    width: 100%;
+    height: auto;
+    h3 {
+        font-family: $FontPrincipal;
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+.TitutloNav {
+    font-family: $FontPrincipal;
+    color: white;
+    font-size: 1rem;
+    padding-top: 25px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+section .row .col-lg-6 p {
+    font-family: $FontPrincipal;
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 1.5rem;
+}
+
+#SectionBackground {
+    background: $ColorVerde;
+}
+
+div#galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    img {
+        width: 25%;
+        transition: .8s opacity;
+        padding: 1%;
+    }
+}
+
+div#galeria img {
+    transition: .8s opacity;
+}
+
+div#galeria:hover img {
+    opacity: 0.6;
+}
+
+div#galeria:hover img:hover {
+    opacity: 1;
+}
+
+#TentateConNuestrasFotos {
+    background-color: $ColorVerde;
+    h3 {
+        font-family: $FontPrincipal;
+        color: white;
+        text-align: center;
+        font-size: 5rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+#myCarousel {
+    padding-top: 80px;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    padding-bottom: 70px;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.carousel-caption h1 {
+    font-family: $FontPrincipal;
+    color: white;
+    font-size: 3rem;
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 2rem;
+    font-family: $FontSecundaria;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.ImagenInfo {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.CardInfo {
+    background-color: $ColorVerde;
+}
+
+.PasosParaHacer {
+    padding-top: 25px;
+}
+
+@media (max-width: 767.98px) {
+    div#galeria img {
+        width: 50%;
+    }
+    .carousel-caption h1 {
+        font-family: $FontPrincipal;
+        color: white;
+        font-size: 3rem;
+    }
+    .carousel-caption p {
+        color: white;
+        font-size: 1.5rem;
+        font-family: $FontSecundaria;
+    }
+    .pl-3,
+    .px-3 {
+        padding: 1rem !important;
+    }
+}
+
+label {
+    font-family: $FontPrincipal;
+    color: white;
+    font-size: 1.5rem;
+}
+
+form {
+    margin: 5%;
+    background-color: $ColorVerde;
+}
+
+.navbar-light .navbar-toggler-icon {
+    padding: 20px;
+    background-image: url(../images/burgericon.svg);
+}
+
+.CardSection {
+    margin: 1%;
+    padding: 1%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #486147;
+    border-color: #486147;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    color: #486147;
+    background-color: white;
+    border-color: white;
+}
+
+.btn-info {
+    @extend .btn-primary
+}
+
+.pl-3,
+.px-3 {
+    padding: 2rem;
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 102;
+    overflow: visible;
+    background: #161516 url('../images/gifpreload.gif') no-repeat center center;
+}
+
+footer {
+    background-color: #161516;
+}
